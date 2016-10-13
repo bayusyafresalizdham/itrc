@@ -6,12 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Page Title -->
-	<title>ITRC - ROBOTIC COMPETITION</title>
+	<title>ITRC 2016</title>
 <!-- /Page title -->
 
 <!-- Seo Tags -->
-	<meta name="description" content="Your page description here" />
-	<meta name="keywords" content="Your meta keywords, here"/>
+	<meta name="description" content="iSTTS Technology Robotic Competition" />
+	<meta name="keywords" content="stts, itrc, surabaya, robotic, lomba, competition"/>
 	<meta name="robots" content="index, follow">
 <!-- /Seo Tags -->
 
@@ -77,13 +77,20 @@
 <header id="header" class="">
 	<div class="container">
 		<!-- logo -->
-		<div class="header-logo" id="header-logo">
-			<img src="img/logo.png" alt=""/>
-		</div>
+		<a href="index.php">
+			<div class="header-logo" id="header-logo">
+				<img src="img/intro-logo4.png" alt=""/>
+			</div>
+		</a>
 		<!-- /logo -->
 		<!-- MAIN MENU -->
 	    <nav class="">
 	      <ul class="hd-list-menu">
+			<li><a href="#schedule">Schedule</a></li>
+			<li><a href="#fee">Registration Fee</a></li>
+			<li><a href="#prize">Prize</a></li>
+	        <li><a href="#rules">Rules</a></li>
+	        <li><a href="#problem">The Problem</a></li>
 	        <li><a href="http://form.jotform.me/62818977124466">Register</a></li>
 	      </ul>
 	    </nav>
@@ -103,8 +110,7 @@
 		<div class="owl-carousel main-carousel" id="main-carousel">
 
 			<!-- slide -->
-			<div class="main-intro" style="background-image: url('img/bg7.jpg');">
-
+			<div class="main-intro" style="background-image: url('img/favicon.png');">
 				<div class="container">
 					<div class="intro-content-wrapper viewport">
 						<!-- INTRO CONTENT -->
@@ -126,12 +132,11 @@
 									</div>
 									<!-- /Event Infos -->
 									<!-- Register Form -->
-									<div class="intro-register-form-text">
-										<p>- Register now and guarantee your seat! -</p>
-									</div>
+									<p>Hello High School Student!!<br>
+									We want you to finish our robot challenge.<br>
+									So be prepared with it. 😉<br>
+									Be the first to win iSTTS Technology Robot Competition!</p>
 									<form class="form" id="intro-register-form">
-
-
 										<!-- Buttons -->
 										<div class="ic-buttons">
 											<a href="http://form.jotform.me/62818977124466" class="btn"><i class="fa fa-paper-plane"></i> &nbsp; register now</a>
@@ -158,7 +163,7 @@
 						<!-- Main Title -->
 						<!-- Adjust the margin-top in css according to content to keep always centered vertically-->
 						<div class="intro-content countdown-wrapper intro-content-slide2">
-							<p class="countdown-title">Remaining time for the event</p>
+							<p class="countdown-title">Remaining time for registration</p>
 							<!-- countDown -->
 							<div id="countdown" class="row"></div>
 							<!-- /countDown -->
@@ -171,7 +176,7 @@
 			<!-- /slide -->
 
 			<!-- slide -->
-			<div class="main-intro" style="background-image: url('img/bg3b.jpg');">
+			<div class="main-intro" style="background-image: url('img/');">
 				<div class="container">
 					<div class="intro-content-wrapper viewport">
 						<!-- Adjust the margin-top in css according to content to keep always centered vertically-->
@@ -180,18 +185,42 @@
 							<div class="row">
 								<!-- col -->
 								<div class="col-md-10 col-md-offset-1">
-									<img src="img/globe.png" alt="">
-									<h1 class="intro-title1">Robotic Competition in STTS</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu neque nulla. In vitae mollis neque. Sed scelerisque mollis metus. In dolor lectus, tincidunt congue porttitor vitae, consequat in eros. Phasellus dapibus eget libero et lobortis. Pellentesque tempus elit sed ultrices fringilla. Quisque feugiat eros lorem, vel egestas eros ultricies a.</p>
+									<img src="img/instagram.png" alt="">
+									<h1 class="intro-title1">Follow Our Instagram</h1>
 									<!-- Buttons -->
 									<div class="ic-buttons">
-										 <a href="http://form.jotform.me/62818977124466" class="btn"><i class="fa fa-paper-plane"></i> &nbsp; register now</a>
+										 <a href="https://instagram.com/itrcistts/" class="btn"><i class="fa fa-paper-plane"></i> &nbsp; Follow @itrcistts</a>
 									</div>
 									<!-- /Buttons -->
 								</div>
 								<!-- /col -->
 							</div>
-
+							<!-- /row -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /slide -->
+			<!-- slide -->
+			<div class="main-intro" style="background-image: url('img/final.jpg');">
+				<div class="container">
+					<div class="intro-content-wrapper viewport">
+						<!-- Adjust the margin-top in css according to content to keep always centered vertically-->
+						<div class="intro-content intro-content-slide3">
+							<!-- row -->
+							<div class="row">
+								<!-- col -->
+								<div class="col-md-10 col-md-offset-1">
+									<!-- TODO Modal -->
+									<img src="img/final.jpg" style="height:400px;">
+									<!-- Buttons -->
+									<div class="ic-buttons">
+										 <p class="countdown-title2"><a href="http://form.jotform.me/62818977124466" class="btn"><i class="fa fa-paper-plane"></i> &nbsp; register now</a></p>
+									</div>
+									<!-- /Buttons -->
+								</div>
+								<!-- /col -->
+							</div>
 							<!-- /row -->
 						</div>
 					</div>
@@ -204,6 +233,8 @@
 
 		<!-- SECTION: Event Infos
 		================================================== -->
+		
+		<a name="schedule"></a>
 		<div class="section-event-infos inverted-section" id="section-event-infos">
 			<div class="container-fluid">
 				<div class="event-infos row">
@@ -222,17 +253,18 @@
 					</div>
 					<!-- /Time -->
 					<!-- Time -->
+					
 					<div class="event-info-col">
 						<div class="event-info-ico"><span class="fa fa-ticket"></span></div>
 						<h3 class="main-title3">SMA</h3>
-						<p><strong>30</strong> Team</p>
+						<p><strong>25</strong> Team Target</p>
 					</div>
 					<!-- /Time -->
 					<!-- Time -->
 					<div class="event-info-col">
 						<div class="event-info-ico"><span class="fa fa-microphone"></span></div>
 						<h3 class="main-title3">SMP</h3>
-						<p><strong>20</strong> Team</p>
+						<p><strong>25</strong> Team Target</p>
 					</div>
 					<!-- /Time -->
 				</div>
@@ -261,8 +293,9 @@
 						<div class="col-sm-10 col-sm-offset-2 schedule-tab-links-wrapper">
 							<!-- Tab links -->
 							<ul class="tab-links schedule-tab-links">
-						        <li class="active"><a href="#schedule-tab1"><span class="fa fa-calendar"></span>&nbsp;&nbsp; TM</a></li>
-						        <li><a href="#schedule-tab2"><span class="fa fa-calendar"></span>&nbsp;&nbsp; ITRC</a></li>
+						        <li class="active"><a href="#schedule-tab1"><span class="fa fa-calendar"></span>&nbsp;&nbsp; Registration</a></li>
+						        <li><a href="#schedule-tab2"><span class="fa fa-calendar"></span>&nbsp;&nbsp; TM</a></li>
+						        <li><a href="#schedule-tab3"><span class="fa fa-calendar"></span>&nbsp;&nbsp; ITRC</a></li>
 						    </ul>
 						    <!-- /Tab Links -->
 						</div>
@@ -271,7 +304,7 @@
 
 					<!-- Schedule Tabs -->
 				    <div class="schedule-tabs">
-				    	<!-- Schedule Tab -->
+						<!-- Schedule Tab -->
 				    	<div class="schedule-tab tab" id="schedule-tab1">
 				    		<!-- schedule list -->
 				    		<div class="schedule-list">
@@ -309,19 +342,17 @@
 													<!-- col -->
 													<div class="col-sm-2">
 														<div class="schedule-item-img">
-															<img src="img/front.png" alt="">
+															<!--<img src="img/front.png" alt="">-->
 														</div>
 													</div>
 													<!-- /col -->
 													<!-- col -->
 													<div class="col-sm-10">
 														<div class="schedule-item-infos">
-															<h4 class="schedule-item-date">15 November 2016 - 08:00</h4>
-															<h3 class="schedule-item-title">Technical Meeting ITRC</h3>
+															<h4 class="schedule-item-date">06 November 2016</h4>
+															<h3 class="schedule-item-title">Registration ITRC 2016 Closed</h3>
 															<div class="schedule-item-text">
-																<p>Venue: STTS Surabaya<br>
-																	Jalan Ngagel Jaya Tengah 73 - 77<br>
-																	Surabaya, Indonesia</p>
+																<p>Pendaftaran tutup</p>
 															</div>
 														</div>
 													</div>
@@ -333,27 +364,25 @@
 									</div>
 								</div>
 								<!-- /Schedule item -->
-
-																<!-- Schedule itens footer -->
-																<div class="schedule-item-footer">
-																	<div class="row">
-																		<div class="col-sm-2">
-																			<!-- schedule item bar -->
-																			<div class="schedule-item-block schedule-item-block-bottom">
-																				<div class="schedule-item-bar schedule-item-bar-bottom"></div>
-																			</div>
-																			<!-- /schedule item bar -->
-																		</div>
-																		<div class="col-sm-10">
-																		</div>
-																	</div>
-																</div>
-																<!-- /Schedule itens footer -->
+									<!-- Schedule itens footer -->
+									<div class="schedule-item-footer">
+										<div class="row">
+											<div class="col-sm-2">
+												<!-- schedule item bar -->
+												<div class="schedule-item-block schedule-item-block-bottom">
+													<div class="schedule-item-bar schedule-item-bar-bottom"></div>
+												</div>
+												<!-- /schedule item bar -->
+											</div>
+											<div class="col-sm-10">
+											</div>
+										</div>
+									</div>
+								<!-- /Schedule itens footer -->
 							</div>
 				    		<!-- /schedule list -->
 				    	</div>
 				    	<!-- /Schedule Tab -->
-
 				    	<!-- Schedule Tab -->
 				    	<div class="schedule-tab tab" id="schedule-tab2">
 				    		<!-- schedule list -->
@@ -399,10 +428,92 @@
 													<!-- col -->
 													<div class="col-sm-10">
 														<div class="schedule-item-infos">
-															<h4 class="schedule-item-date">17 November 2016 - 08:00</h4>
-															<h3 class="schedule-item-title">Lomba ITRC</h3>
+															<h4 class="schedule-item-date">14 November 2016</h4>
+															<h3 class="schedule-item-title">Technical Meeting ITRC 2016</h3>
 															<div class="schedule-item-text">
-																<p>Venue: STTS Surabaya<br>
+																<p>Venue: Auditorium iSTTS<br>
+																	Jalan Ngagel Jaya Tengah 73 - 77<br>
+																	Surabaya, Indonesia</p>
+															</div>
+														</div>
+													</div>
+													<!-- /col -->
+												</div>
+											</div>
+											<!-- schedule item content -->
+										</div>
+									</div>
+								</div>
+								<!-- /Schedule item -->
+									<!-- Schedule itens footer -->
+									<div class="schedule-item-footer">
+										<div class="row">
+											<div class="col-sm-2">
+												<!-- schedule item bar -->
+												<div class="schedule-item-block schedule-item-block-bottom">
+													<div class="schedule-item-bar schedule-item-bar-bottom"></div>
+												</div>
+												<!-- /schedule item bar -->
+											</div>
+											<div class="col-sm-10">
+											</div>
+										</div>
+									</div>
+								<!-- /Schedule itens footer -->
+							</div>
+				    		<!-- /schedule list -->
+				    	</div>
+				    	<!-- /Schedule Tab -->
+
+				    	<!-- Schedule Tab -->
+				    	<div class="schedule-tab tab" id="schedule-tab3">
+				    		<!-- schedule list -->
+				    		<div class="schedule-list">
+
+								<!-- Schedule itens header -->
+								<div class="schedule-item-header">
+									<div class="row">
+										<div class="col-sm-2">
+											<!-- schedule item bar -->
+											<div class="schedule-item-block schedule-item-block-top">
+												<div class="schedule-item-bar schedule-item-bar-top"></div>
+											</div>
+											<!-- /schedule item bar -->
+										</div>
+										<div class="col-sm-10">
+										</div>
+									</div>
+								</div>
+								<!-- /Schedule itens header -->
+
+								<!-- Schedule item -->
+								<div class="schedule-item">
+									<div class="row">
+										<div class="col-sm-2">
+											<!-- schedule item bar -->
+											<div class="schedule-item-block">
+												<div class="schedule-item-bar"></div>
+											</div>
+											<!-- /schedule item bar -->
+										</div>
+										<div class="col-sm-10 schedule-item-content-wrapper">
+											<!-- schedule item content -->
+											<div class="schedule-item-content">
+												<div class="row">
+													<!-- col -->
+													<div class="col-sm-2">
+														<div class="schedule-item-img">
+															<img src="img/front.png" alt="">
+														</div>
+													</div>
+													<!-- /col -->
+													<!-- col -->
+													<div class="col-sm-10">
+														<div class="schedule-item-infos">
+															<h4 class="schedule-item-date">16 November 2016</h4>
+															<h3 class="schedule-item-title">ITRC 2016</h3>
+															<div class="schedule-item-text">
+																<p>Venue: iSTTS<br>
 																	Jalan Ngagel Jaya Tengah 73 - 77<br>
 																	Surabaya, Indonesia</p>
 															</div>
@@ -452,12 +563,13 @@
 
 	<!-- SECTION: Prices
 	================================================== -->
+	<a name="fee"></a>
 	<div class="section-prices section-padding section-bg-left" id="section-prices">
 		<div class="container">
 
 			<!-- Section title -->
 			<div class="section-title-wrapper">
-				<h2 class="title-section">Biaya Pendaftaran</h2>
+				<h2 class="title-section">Registration Fee</h2>
 			</div>
 			<!-- /Section title -->
 
@@ -467,58 +579,55 @@
 				<!-- item -->
 				<div class="col-sm-6">
 					<!-- price ticket -->
-					<a href="#" class="price-ticket-item">
 						<div class="price-ticket-item-wrapper">
 							<!-- Front card -->
 							<div class="price-ticket-item-front">
 								<div class="price-ticket-item-border">
-									<!-- row -->
-									<div class="row">
-										<!-- col -->
-										<div class="col-sm-6">
-											<!-- ticket price -->
-											<h3 class="price-ticket-title">SMA</h3>
-											<p class="price-ticket-type">Rp. 135.000</p>
-											<!-- /ticket-price -->
-										</div>
-										<!-- /col -->
-										<!-- col -->
-										<div class="col-sm-6 no-spadding">
-											<div class="price-ticket-infos-wrapper">
-												<p><strong>This Includes:</strong></p>
-												<ul class="clean-list">
-													<li><i class="fa fa-check"></i>&nbsp; Gratis Snack</li>
-													<li><i class="fa fa-check"></i>&nbsp; Gratis Makan </li>
-													<li><i class="fa fa-check"></i>&nbsp; Sertifikat Peserta </li>
-												</ul>
-											</div>
-										</div>
-										<!-- /col -->
+								<!-- row -->
+								<div class="row">
+									<!-- col -->
+									<div class="col-sm-6">
+										<!-- ticket price -->
+										<h3 class="price-ticket-title">SMA</h3>
+										<p class="price-ticket-type">Rp. 150.000</p>
+										<!-- /ticket-price -->
 									</div>
-									<!-- /row -->
-								</div>
-							</div>
-							<!-- /front-card -->
-							<!-- Back Card -->
-							<div class="price-ticket-item-back" onclick="move()">
-								<div class="price-ticket-item-border">
-									<div class="price-ticket-buy">
-										<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
-										<h3 class="ticket-item-buy-text">Register Now!</h3>
-										<p><i>just 1 click away!</i></p>
+									<!-- /col -->
+									<!-- col -->
+									<div class="col-sm-6 no-spadding">
+										<div class="price-ticket-infos-wrapper">
+											<p><strong>This Includes:</strong></p>
+											<ul class="clean-list">
+												<li><i class="fa fa-check"></i>&nbsp; Gratis Snack</li>
+												<li><i class="fa fa-check"></i>&nbsp; Gratis Makan </li>
+												<li><i class="fa fa-check"></i>&nbsp; Sertifikat Peserta </li>
+											</ul>
+										</div>
 									</div>
+									<!-- /col -->
 								</div>
+								<!-- /row -->
 							</div>
-							<!-- /Back Card -->
 						</div>
-					</a>
+						<!-- /front-card -->
+						<!-- Back Card -->
+						<div class="price-ticket-item-back" onclick="move()">
+							<div class="price-ticket-item-border">
+								<div class="price-ticket-buy">
+									<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
+									<h3 class="ticket-item-buy-text">Register Now!</h3>
+									<p><i>just 1 click away!</i></p>
+								</div>
+							</div>
+						</div>
+						<!-- /Back Card -->
+						</div>
 					<!-- /price ticket -->
 				</div>
 				<!-- /item -->
 				<!-- item -->
 				<div class="col-sm-6">
 					<!-- price ticket -->
-					<a href="#" class="price-ticket-item">
 						<div class="price-ticket-item-wrapper">
 							<!-- Front card -->
 							<div class="price-ticket-item-front">
@@ -529,7 +638,7 @@
 										<div class="col-sm-6">
 											<!-- ticket price -->
 											<h3 class="price-ticket-title">SMP</h3>
-											<p class="price-ticket-type">Rp. 135.000</p>
+											<p class="price-ticket-type">Rp. 120.000</p>
 											<!-- /ticket-price -->
 										</div>
 										<!-- /col -->
@@ -562,7 +671,6 @@
 							</div>
 							<!-- /Back Card -->
 						</div>
-					</a>
 					<!-- /price ticket -->
 				</div>
 				<!-- /item -->
@@ -578,11 +686,340 @@
 
 		<!-- SECTION: Peraturan
 		================================================== -->
+		<a name="prize"></a>
 		<div class="section-team inverted-section2 section-padding" id="section-speakers">
+		<div class="container">
+				<!-- Section title -->
+				<div class="section-title-wrapper">
+					<h2 class="title-section">High School Student Prize</h2>
+				</div>
+				<!-- /Section title -->
+				<!-- Princing Tickets -->
+				<div class="row">
+					<!-- item -->
+					<div class="col-sm-4">
+						<!-- price ticket -->
+							<div class="price-ticket-item-wrapper">
+								<!-- Front card -->
+								<div class="price-ticket-item-front">
+									<div class="price-ticket-item-border">
+										<!-- row -->
+										<div class="row">
+											<!-- col -->
+											<div class="col-sm-6">
+												<!-- ticket price -->
+												<h3 class="price-ticket-title">1st</h3>
+												<!-- /ticket-price -->
+											</div>
+											<!-- /col -->
+											<!-- col -->
+											<div class="col-sm-6 no-spadding">
+												<div class="price-ticket-infos-wrapper">
+													<p><strong>This Includes:</strong></p>
+													<ul class="clean-list">
+														<li><i class="fa fa-check"></i> Uang Rp.xxx.000</li>
+														<li><i class="fa fa-check"></i> Trophy</li>
+														<li><i class="fa fa-check"></i> Sertifikat</li>
+													</ul>
+												</div>
+											</div>
+											<!-- /col -->
+										</div>
+										<!-- /row -->
+									</div>
+								</div>
+								<!-- /front-card -->
+								<!-- Back Card -->
+								<div class="price-ticket-item-back" onclick="move()">
+									<div class="price-ticket-item-border">
+										<div class="price-ticket-buy">
+											<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
+											<h3 class="ticket-item-buy-text">Register Now!</h3>
+											<p><i>just 1 click away!</i></p>
+										</div>
+									</div>
+								</div>
+								<!-- /Back Card -->
+							</div>
+						<!-- /price ticket -->
+					</div>
+					<!-- /item -->
+
+									<!-- item -->
+									<div class="col-sm-4">
+										<!-- price ticket -->
+											<div class="price-ticket-item-wrapper">
+												<!-- Front card -->
+												<div class="price-ticket-item-front">
+													<div class="price-ticket-item-border">
+														<!-- row -->
+														<div class="row">
+															<!-- col -->
+															<div class="col-sm-6">
+																<!-- ticket price -->
+																<h3 class="price-ticket-title">2nd</h3>
+																<!-- /ticket-price -->
+															</div>
+															<!-- /col -->
+															<!-- col -->
+															<div class="col-sm-6 no-spadding">
+																<div class="price-ticket-infos-wrapper">
+																	<p><strong>This Includes:</strong></p>
+																	<ul class="clean-list">
+																		<li><i class="fa fa-check"></i> Uang Rp.xxx.000</li>
+																		<li><i class="fa fa-check"></i> Sertifikat</li>
+																	</ul>
+																</div>
+															</div>
+															<!-- /col -->
+														</div>
+														<!-- /row -->
+													</div>
+												</div>
+												<!-- /front-card -->
+												<!-- Back Card -->
+												<div class="price-ticket-item-back" onclick="move()">
+													<div class="price-ticket-item-border">
+														<div class="price-ticket-buy">
+															<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
+															<h3 class="ticket-item-buy-text">Register Now!</h3>
+															<p><i>just 1 click away!</i></p>
+														</div>
+													</div>
+												</div>
+												<!-- /Back Card -->
+											</div>
+										<!-- /price ticket -->
+									</div>
+									<!-- /item -->
+
+													<!-- item -->
+													<div class="col-sm-4">
+														<!-- price ticket -->
+															<div class="price-ticket-item-wrapper">
+																<!-- Front card -->
+																<div class="price-ticket-item-front">
+																	<div class="price-ticket-item-border">
+																		<!-- row -->
+																		<div class="row">
+																			<!-- col -->
+																			<div class="col-sm-6">
+																				<!-- ticket price -->
+																				<h3 class="price-ticket-title">3rd</h3>
+																				<!-- /ticket-price -->
+																			</div>
+																			<!-- /col -->
+																			<!-- col -->
+																			<div class="col-sm-6 no-spadding">
+																				<div class="price-ticket-infos-wrapper">
+																					<p><strong>This Includes:</strong></p>
+																					<ul class="clean-list">
+																						<li><i class="fa fa-check"></i> Uang Rp.xxx.000</li>
+																						<li><i class="fa fa-check"></i> Sertifikat</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<!-- /col -->
+																		</div>
+																		<!-- /row -->
+																	</div>
+																</div>
+																<!-- /front-card -->
+																<!-- Back Card -->
+																<div class="price-ticket-item-back" onclick="move()">
+																	<div class="price-ticket-item-border">
+																		<div class="price-ticket-buy">
+																			<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
+																			<h3 class="ticket-item-buy-text">Register Now!</h3>
+																			<p><i>just 1 click away!</i></p>
+																		</div>
+																	</div>
+																</div>
+																<!-- /Back Card -->
+															</div>
+														<!-- /price ticket -->
+													</div>
+													<!-- /item -->
+
+				</div>
+				<!-- /Princing Tickets -->
+			</div>
+		</div>
+		
+				<!-- SECTION: Prices
+		================================================== -->
+		<div class="section-team inverted-section2 section-padding" id="section-speakers">
+			<div class="container">
+
+				<!-- Section title -->
+				<div class="section-title-wrapper">
+					<h2 class="title-section">Junior School Student Prize</h2>
+				</div>
+				<!-- /Section title -->
+
+				<!-- Princing Tickets -->
+				<div class="row">
+
+					<!-- item -->
+					<div class="col-sm-4">
+						<!-- price ticket -->
+							<div class="price-ticket-item-wrapper">
+								<!-- Front card -->
+								<div class="price-ticket-item-front">
+									<div class="price-ticket-item-border">
+										<!-- row -->
+										<div class="row">
+											<!-- col -->
+											<div class="col-sm-6">
+												<!-- ticket price -->
+												<h3 class="price-ticket-title">1st</h3>
+												<!-- /ticket-price -->
+											</div>
+											<!-- /col -->
+											<!-- col -->
+											<div class="col-sm-6 no-spadding">
+												<div class="price-ticket-infos-wrapper">
+													<p><strong>This Includes:</strong></p>
+													<ul class="clean-list">
+														<li><i class="fa fa-check"></i> Uang Rp.xxx.000</li>
+														<li><i class="fa fa-check"></i> Trophy</li>
+														<li><i class="fa fa-check"></i> Sertifikat</li>
+													</ul>
+												</div>
+											</div>
+											<!-- /col -->
+										</div>
+										<!-- /row -->
+									</div>
+								</div>
+								<!-- /front-card -->
+								<!-- Back Card -->
+								<div class="price-ticket-item-back" onclick="move()">
+									<div class="price-ticket-item-border">
+										<div class="price-ticket-buy">
+											<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
+											<h3 class="ticket-item-buy-text">Register Now!</h3>
+											<p><i>just 1 click away!</i></p>
+										</div>
+									</div>
+								</div>
+								<!-- /Back Card -->
+							</div>
+						<!-- /price ticket -->
+					</div>
+					<!-- /item -->
+
+									<!-- item -->
+									<div class="col-sm-4">
+										<!-- price ticket -->
+											<div class="price-ticket-item-wrapper">
+												<!-- Front card -->
+												<div class="price-ticket-item-front">
+													<div class="price-ticket-item-border">
+														<!-- row -->
+														<div class="row">
+															<!-- col -->
+															<div class="col-sm-6">
+																<!-- ticket price -->
+																<h3 class="price-ticket-title">2nd</h3>
+																<!-- /ticket-price -->
+															</div>
+															<!-- /col -->
+															<!-- col -->
+															<div class="col-sm-6 no-spadding">
+																<div class="price-ticket-infos-wrapper">
+																	<p><strong>This Includes:</strong></p>
+																	<ul class="clean-list">
+																		<li><i class="fa fa-check"></i> Uang Rp.xxx.000</li>
+																		<li><i class="fa fa-check"></i> Sertifikat</li>
+																	</ul>
+																</div>
+															</div>
+															<!-- /col -->
+														</div>
+														<!-- /row -->
+													</div>
+												</div>
+												<!-- /front-card -->
+												<!-- Back Card -->
+												<div class="price-ticket-item-back" onclick="move()">
+													<div class="price-ticket-item-border">
+														<div class="price-ticket-buy">
+															<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
+															<h3 class="ticket-item-buy-text">Register Now!</h3>
+															<p><i>just 1 click away!</i></p>
+														</div>
+													</div>
+												</div>
+												<!-- /Back Card -->
+											</div>
+										<!-- /price ticket -->
+									</div>
+									<!-- /item -->
+
+													<!-- item -->
+													<div class="col-sm-4">
+														<!-- price ticket -->
+															<div class="price-ticket-item-wrapper">
+																<!-- Front card -->
+																<div class="price-ticket-item-front">
+																	<div class="price-ticket-item-border">
+																		<!-- row -->
+																		<div class="row">
+																			<!-- col -->
+																			<div class="col-sm-6">
+																				<!-- ticket price -->
+																				<h3 class="price-ticket-title">3rd</h3>
+																				<!-- /ticket-price -->
+																			</div>
+																			<!-- /col -->
+																			<!-- col -->
+																			<div class="col-sm-6 no-spadding">
+																				<div class="price-ticket-infos-wrapper">
+																					<p><strong>This Includes:</strong></p>
+																					<ul class="clean-list">
+																						<li><i class="fa fa-check"></i> Uang Rp.xxx.000</li>
+																						<li><i class="fa fa-check"></i> Sertifikat</li>
+																					</ul>
+																				</div>
+																			</div>
+																			<!-- /col -->
+																		</div>
+																		<!-- /row -->
+																	</div>
+																</div>
+																<!-- /front-card -->
+																<!-- Back Card -->
+																<div class="price-ticket-item-back" onclick="move()">
+																	<div class="price-ticket-item-border">
+																		<div class="price-ticket-buy">
+																			<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
+																			<h3 class="ticket-item-buy-text">Register Now!</h3>
+																			<p><i>just 1 click away!</i></p>
+																		</div>
+																	</div>
+																</div>
+																<!-- /Back Card -->
+															</div>
+														<!-- /price ticket -->
+													</div>
+													<!-- /item -->
+
+				</div>
+				<!-- /Princing Tickets -->
+
+			</div>
+		</div>
+		<!-- /SECTION: Prices
+		================================================== -->
+		<!-- /SECTION: Peraturan
+		================================================== -->
+		<a name='rules'></a>
+		<div class="section-prices section-padding section-bg-left" id="section-prices">
 			<div class="container">
 				<!-- Section title -->
 				<div class="section-title-wrapper">
-					<h2 class="title-section">Peraturan</h2>
+					<h2 class="title-section">Rules</h2>
 					<p>1. 1 Team Terdiri dari 3 orang</p>
 					<p>2. Pendaftaran Terakhir 13 November 2016</p>
 				</div>
@@ -591,350 +1028,23 @@
 		</div>
 		<!-- /SECTION: Peraturan
 		================================================== -->
-		<!-- SECTION: Prices
+		
+		<!-- /SECTION: Peraturan
 		================================================== -->
+		<a name='problem'></a>
 		<div class="section-prices section-padding section-bg-left" id="section-prices">
 			<div class="container">
-
 				<!-- Section title -->
 				<div class="section-title-wrapper">
-					<h2 class="title-section">Hadiah SMA</h2>
+					<h2 class="title-section">The Problem</h2>
+					<p>Download Here</p>
 				</div>
 				<!-- /Section title -->
-
-				<!-- Princing Tickets -->
-				<div class="row">
-
-					<!-- item -->
-					<div class="col-sm-4">
-						<!-- price ticket -->
-						<a href="#" class="price-ticket-item">
-							<div class="price-ticket-item-wrapper">
-								<!-- Front card -->
-								<div class="price-ticket-item-front">
-									<div class="price-ticket-item-border">
-										<!-- row -->
-										<div class="row">
-											<!-- col -->
-											<div class="col-sm-6">
-												<!-- ticket price -->
-												<h3 class="price-ticket-title">1st</h3>
-												<!-- /ticket-price -->
-											</div>
-											<!-- /col -->
-											<!-- col -->
-											<div class="col-sm-6 no-spadding">
-												<div class="price-ticket-infos-wrapper">
-													<p><strong>This Includes:</strong></p>
-													<ul class="clean-list">
-														<li><i class="fa fa-check"></i> Uang Rp.1.500.000</li>
-														<li><i class="fa fa-check"></i> Trophy</li>
-														<li><i class="fa fa-check"></i> Sertifikat</li>
-													</ul>
-												</div>
-											</div>
-											<!-- /col -->
-										</div>
-										<!-- /row -->
-									</div>
-								</div>
-								<!-- /front-card -->
-								<!-- Back Card -->
-								<div class="price-ticket-item-back" onclick="move()">
-									<div class="price-ticket-item-border">
-										<div class="price-ticket-buy">
-											<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
-											<h3 class="ticket-item-buy-text">Register Now!</h3>
-											<p><i>just 1 click away!</i></p>
-										</div>
-									</div>
-								</div>
-								<!-- /Back Card -->
-							</div>
-						</a>
-						<!-- /price ticket -->
-					</div>
-					<!-- /item -->
-
-									<!-- item -->
-									<div class="col-sm-4">
-										<!-- price ticket -->
-										<a href="#" class="price-ticket-item">
-											<div class="price-ticket-item-wrapper">
-												<!-- Front card -->
-												<div class="price-ticket-item-front">
-													<div class="price-ticket-item-border">
-														<!-- row -->
-														<div class="row">
-															<!-- col -->
-															<div class="col-sm-6">
-																<!-- ticket price -->
-																<h3 class="price-ticket-title">2nd</h3>
-																<!-- /ticket-price -->
-															</div>
-															<!-- /col -->
-															<!-- col -->
-															<div class="col-sm-6 no-spadding">
-																<div class="price-ticket-infos-wrapper">
-																	<p><strong>This Includes:</strong></p>
-																	<ul class="clean-list">
-																		<li><i class="fa fa-check"></i> Uang Rp.1.000.000</li>
-																		<li><i class="fa fa-check"></i> Sertifikat</li>
-																	</ul>
-																</div>
-															</div>
-															<!-- /col -->
-														</div>
-														<!-- /row -->
-													</div>
-												</div>
-												<!-- /front-card -->
-												<!-- Back Card -->
-												<div class="price-ticket-item-back" onclick="move()">
-													<div class="price-ticket-item-border">
-														<div class="price-ticket-buy">
-															<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
-															<h3 class="ticket-item-buy-text">Register Now!</h3>
-															<p><i>just 1 click away!</i></p>
-														</div>
-													</div>
-												</div>
-												<!-- /Back Card -->
-											</div>
-										</a>
-										<!-- /price ticket -->
-									</div>
-									<!-- /item -->
-
-													<!-- item -->
-													<div class="col-sm-4">
-														<!-- price ticket -->
-														<a href="#" class="price-ticket-item">
-															<div class="price-ticket-item-wrapper">
-																<!-- Front card -->
-																<div class="price-ticket-item-front">
-																	<div class="price-ticket-item-border">
-																		<!-- row -->
-																		<div class="row">
-																			<!-- col -->
-																			<div class="col-sm-6">
-																				<!-- ticket price -->
-																				<h3 class="price-ticket-title">3rd</h3>
-																				<!-- /ticket-price -->
-																			</div>
-																			<!-- /col -->
-																			<!-- col -->
-																			<div class="col-sm-6 no-spadding">
-																				<div class="price-ticket-infos-wrapper">
-																					<p><strong>This Includes:</strong></p>
-																					<ul class="clean-list">
-																						<li><i class="fa fa-check"></i> Uang Rp.750.000</li>
-																						<li><i class="fa fa-check"></i> Sertifikat</li>
-																					</ul>
-																				</div>
-																			</div>
-																			<!-- /col -->
-																		</div>
-																		<!-- /row -->
-																	</div>
-																</div>
-																<!-- /front-card -->
-																<!-- Back Card -->
-																<div class="price-ticket-item-back" onclick="move()">
-																	<div class="price-ticket-item-border">
-																		<div class="price-ticket-buy">
-																			<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
-																			<h3 class="ticket-item-buy-text">Register Now!</h3>
-																			<p><i>just 1 click away!</i></p>
-																		</div>
-																	</div>
-																</div>
-																<!-- /Back Card -->
-															</div>
-														</a>
-														<!-- /price ticket -->
-													</div>
-													<!-- /item -->
-
-				</div>
-				<!-- /Princing Tickets -->
-
 			</div>
 		</div>
-		<!-- /SECTION: Prices
+		<!-- /SECTION: Peraturan
 		================================================== -->
-		<!-- SECTION: Prices
-		================================================== -->
-		<div class="section-prices section-padding section-bg-left" id="section-prices">
-			<div class="container">
 
-				<!-- Section title -->
-				<div class="section-title-wrapper">
-					<h2 class="title-section">Hadiah SMP</h2>
-				</div>
-				<!-- /Section title -->
-
-				<!-- Princing Tickets -->
-				<div class="row">
-
-					<!-- item -->
-					<div class="col-sm-4">
-						<!-- price ticket -->
-						<a href="#" class="price-ticket-item">
-							<div class="price-ticket-item-wrapper">
-								<!-- Front card -->
-								<div class="price-ticket-item-front">
-									<div class="price-ticket-item-border">
-										<!-- row -->
-										<div class="row">
-											<!-- col -->
-											<div class="col-sm-6">
-												<!-- ticket price -->
-												<h3 class="price-ticket-title">1st</h3>
-												<!-- /ticket-price -->
-											</div>
-											<!-- /col -->
-											<!-- col -->
-											<div class="col-sm-6 no-spadding">
-												<div class="price-ticket-infos-wrapper">
-													<p><strong>This Includes:</strong></p>
-													<ul class="clean-list">
-														<li><i class="fa fa-check"></i> Uang Rp.1.000.000</li>
-														<li><i class="fa fa-check"></i> Trophy</li>
-														<li><i class="fa fa-check"></i> Sertifikat</li>
-													</ul>
-												</div>
-											</div>
-											<!-- /col -->
-										</div>
-										<!-- /row -->
-									</div>
-								</div>
-								<!-- /front-card -->
-								<!-- Back Card -->
-								<div class="price-ticket-item-back" onclick="move()">
-									<div class="price-ticket-item-border">
-										<div class="price-ticket-buy">
-											<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
-											<h3 class="ticket-item-buy-text">Register Now!</h3>
-											<p><i>just 1 click away!</i></p>
-										</div>
-									</div>
-								</div>
-								<!-- /Back Card -->
-							</div>
-						</a>
-						<!-- /price ticket -->
-					</div>
-					<!-- /item -->
-
-									<!-- item -->
-									<div class="col-sm-4">
-										<!-- price ticket -->
-										<a href="#" class="price-ticket-item">
-											<div class="price-ticket-item-wrapper">
-												<!-- Front card -->
-												<div class="price-ticket-item-front">
-													<div class="price-ticket-item-border">
-														<!-- row -->
-														<div class="row">
-															<!-- col -->
-															<div class="col-sm-6">
-																<!-- ticket price -->
-																<h3 class="price-ticket-title">2nd</h3>
-																<!-- /ticket-price -->
-															</div>
-															<!-- /col -->
-															<!-- col -->
-															<div class="col-sm-6 no-spadding">
-																<div class="price-ticket-infos-wrapper">
-																	<p><strong>This Includes:</strong></p>
-																	<ul class="clean-list">
-																		<li><i class="fa fa-check"></i> Uang Rp.750.000</li>
-																		<li><i class="fa fa-check"></i> Sertifikat</li>
-																	</ul>
-																</div>
-															</div>
-															<!-- /col -->
-														</div>
-														<!-- /row -->
-													</div>
-												</div>
-												<!-- /front-card -->
-												<!-- Back Card -->
-												<div class="price-ticket-item-back" onclick="move()">
-													<div class="price-ticket-item-border">
-														<div class="price-ticket-buy">
-															<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
-															<h3 class="ticket-item-buy-text">Register Now!</h3>
-															<p><i>just 1 click away!</i></p>
-														</div>
-													</div>
-												</div>
-												<!-- /Back Card -->
-											</div>
-										</a>
-										<!-- /price ticket -->
-									</div>
-									<!-- /item -->
-
-													<!-- item -->
-													<div class="col-sm-4">
-														<!-- price ticket -->
-														<a href="#" class="price-ticket-item">
-															<div class="price-ticket-item-wrapper">
-																<!-- Front card -->
-																<div class="price-ticket-item-front">
-																	<div class="price-ticket-item-border">
-																		<!-- row -->
-																		<div class="row">
-																			<!-- col -->
-																			<div class="col-sm-6">
-																				<!-- ticket price -->
-																				<h3 class="price-ticket-title">3rd</h3>
-																				<!-- /ticket-price -->
-																			</div>
-																			<!-- /col -->
-																			<!-- col -->
-																			<div class="col-sm-6 no-spadding">
-																				<div class="price-ticket-infos-wrapper">
-																					<p><strong>This Includes:</strong></p>
-																					<ul class="clean-list">
-																						<li><i class="fa fa-check"></i> Uang Rp.500.000</li>
-																						<li><i class="fa fa-check"></i> Sertifikat</li>
-																					</ul>
-																				</div>
-																			</div>
-																			<!-- /col -->
-																		</div>
-																		<!-- /row -->
-																	</div>
-																</div>
-																<!-- /front-card -->
-																<!-- Back Card -->
-																<div class="price-ticket-item-back" onclick="move()">
-																	<div class="price-ticket-item-border">
-																		<div class="price-ticket-buy">
-																			<p class="ticket-item-buy-ico"><i class="fa fa-ticket"></i></p>
-																			<h3 class="ticket-item-buy-text">Register Now!</h3>
-																			<p><i>just 1 click away!</i></p>
-																		</div>
-																	</div>
-																</div>
-																<!-- /Back Card -->
-															</div>
-														</a>
-														<!-- /price ticket -->
-													</div>
-													<!-- /item -->
-
-				</div>
-				<!-- /Princing Tickets -->
-
-			</div>
-		</div>
-		<!-- /SECTION: Prices
-		================================================== -->
 
 		<!-- SECTION: Sponsors
 		================================================== -->
@@ -942,36 +1052,37 @@
 			<div class="container">
 				<!-- Section title -->
 				<div class="section-title-wrapper">
-					<h2 class="title-section">Sponsor</h2>
+					<h2 class="title-section">Supported By</h2>
 				</div>
 				<!-- /Section title -->
 
 				<div class="sponsors-list-wrapper">
 					<div class="sponsors-list" id="sponsors-carousel">
 						<!-- item -->
-						<div class="sponsor-item">
-							<img src="#" alt="" width="50">
-						</div>
+						<a href="http://stts.edu/">
+							<div class="sponsor-item">
+								<img src="img/sponsor-1.png" alt="iSTTS" width="75">
+							</div>
+						</a>
 						<!-- /item -->
 						<!-- item -->
 						<div class="sponsor-item">
-							<img src="#" alt="">
+							<img src="img/sponsor-2.png" alt="HIMAFOR" width="75">
 						</div>
 						<!-- /item -->
 						<!-- item -->
-						<div class="sponsor-item">
-							<img src="#" alt="">
-						</div>
+						<a href="https://instagram.com/diesnatalis_istts/">
+							<div class="sponsor-item">
+								<img src="img/sponsor-3.png" alt="Dies Natalis XXXVII" width="75">
+							</div>
+						</a>
 						<!-- /item -->
 						<!-- item -->
-						<div class="sponsor-item">
-							<img src="#" alt="">
-						</div>
-						<!-- /item -->
-						<!-- item -->
-						<div class="sponsor-item">
-							<img src="#" alt="">
-						</div>
+						<a href="http://e-robokidz.com/">
+							<div class="sponsor-item">
+								<img src="img/sponsor-4.png" alt="Robokidz" width="150">
+							</div>
+						</a>
 						<!-- /item -->
 					</div>
 				</div>
