@@ -91,6 +91,7 @@
 			<li><a href="#prize">Prize</a></li>
 	        <li><a href="#rules">Rules</a></li>
 	        <li><a href="#problem">The Problem</a></li>
+	        <li><a href="#contact">Contact Us</a></li>
 	        <li><a href="http://form.jotform.me/62818977124466">Register</a></li>
 	      </ul>
 	    </nav>
@@ -189,7 +190,7 @@
 									<h1 class="intro-title1">Follow Our Instagram</h1>
 									<!-- Buttons -->
 									<div class="ic-buttons">
-										 <a href="https://instagram.com/itrcistts/" class="btn"><i class="fa fa-paper-plane"></i> &nbsp; Follow @itrcistts</a>
+										 <a href="https://instagram.com/itrcistts/" class="btn"><img src="img/instagram.png" width="25"> &nbsp; Follow @itrcistts</a>
 									</div>
 									<!-- /Buttons -->
 								</div>
@@ -1012,7 +1013,7 @@
 		</div>
 		<!-- /SECTION: Prices
 		================================================== -->
-		<!-- /SECTION: Peraturan
+		<!-- /SECTION: Rules
 		================================================== -->
 		<a name='rules'></a>
 		<div class="section-prices section-padding section-bg-left" id="section-prices">
@@ -1026,13 +1027,13 @@
 				<!-- /Section title -->
 			</div>
 		</div>
-		<!-- /SECTION: Peraturan
+		<!-- /SECTION: Rules
 		================================================== -->
 		
-		<!-- /SECTION: Peraturan
+		<!-- /SECTION: The Problem
 		================================================== -->
 		<a name='problem'></a>
-		<div class="section-prices section-padding section-bg-left" id="section-prices">
+		<div class="section-team inverted-section2 section-padding" id="section-speakers">
 			<div class="container">
 				<!-- Section title -->
 				<div class="section-title-wrapper">
@@ -1042,7 +1043,28 @@
 				<!-- /Section title -->
 			</div>
 		</div>
-		<!-- /SECTION: Peraturan
+		<!-- /SECTION: The Problem
+		================================================== -->
+		
+				<!-- /SECTION: Contact Us
+		================================================== -->
+		<a name='contact'></a>
+		<div class="section-prices section-padding section-bg-left" id="section-prices">
+			<div class="container">
+				<!-- Section title -->
+				<div class="section-title-wrapper">
+					<h2 class="title-section">Contact Us</h2>
+					<p>
+					<div class="ic-buttons">
+						<a href="https://instagram.com/itrcistts/" class="btn"><img src="img/instagram.png" width="25">&nbsp; Follow @itrcistts</a>
+					</div>
+					<h3>Alexandy 081553447073</h3>
+					<h3>Anthony 087853951315</h3></p>
+				</div>
+				<!-- /Section title -->
+			</div>
+		</div>
+		<!-- /SECTION: Contact Us
 		================================================== -->
 
 
