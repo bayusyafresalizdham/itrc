@@ -48,6 +48,8 @@
 ============================================================================== -->
 </head>
 <body>
+
+											
 <!-- Page Loader
 ========================================================= -->
 <div class="loader-container" id="page-loader">
@@ -137,7 +139,8 @@
 									<form class="form" id="intro-register-form">
 										<!-- Buttons -->
 										<div class="ic-buttons">
-											<a href="http://form.jotform.me/62818977124466" class="btn"><i class="fa fa-paper-plane"></i> &nbsp; register now</a>
+											<a href="http://form.jotform.me/62818977124466" class="btn" style="margin-right:5px;"><i class="fa fa-paper-plane" ></i> &nbsp; register now</a>
+											<a href="download.php" class="btn" style="margin-left:5px;"><i class="fa fa-download" ></i> &nbsp; Download Poster</a>
 										</div>
 										<!-- /buttons -->
 									</form>
