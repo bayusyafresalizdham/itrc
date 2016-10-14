@@ -132,11 +132,12 @@
 									</div>
 									<!-- /Event Infos -->
 									<!-- Register Form -->
-									<p>Hello High School Student!!<br>
-									We want you to finish our robot challenge.<br>
-									So be prepared with it. 😉<br>
-									Be the first to win iSTTS Technology Robot Competition!</p>
+									<div class="intro-register-form-text">
+										<p>- Register now! -</p>
+									</div>
 									<form class="form" id="intro-register-form">
+
+
 										<!-- Buttons -->
 										<div class="ic-buttons">
 											<a href="http://form.jotform.me/62818977124466" class="btn" style="margin-right:5px;"><i class="fa fa-paper-plane" ></i> &nbsp; register now</a>
@@ -177,7 +178,7 @@
 			<!-- /slide -->
 
 			<!-- slide -->
-			<div class="main-intro" style="background-image: url('img/final.jpg');">
+			<div class="main-intro" style="background-image: url('img/bg3b.jpg');">
 				<div class="container">
 					<div class="intro-content-wrapper viewport">
 						<!-- Adjust the margin-top in css according to content to keep always centered vertically-->
@@ -186,17 +187,21 @@
 							<div class="row">
 								<!-- col -->
 								<div class="col-md-10 col-md-offset-1">
-									<!-- TODO Modal -->
-									<h1 class="intro-title1">Total Prize IDR 5.500.000</h1>
-									<img src="img/final.jpg" style="height:400px;">
+									<img src="img/globe.png" alt="">
+									<h1 class="intro-title1">Robotic Competition in STTS</h1>
+									<p>Hello High School Student!!<br>
+									We want you to finish our robot challenge.<br>
+									So be prepared with it. 😉<br>
+									Be the first to win iSTTS Technology Robot Competition!</p>
 									<!-- Buttons -->
 									<div class="ic-buttons">
-										 <p class="countdown-title2"><a href="http://form.jotform.me/62818977124466" class="btn"><i class="fa fa-paper-plane"></i> &nbsp; register now</a></p>
+										 <a href="http://form.jotform.me/62818977124466" class="btn"><i class="fa fa-paper-plane"></i> &nbsp; register now</a>
 									</div>
 									<!-- /Buttons -->
 								</div>
 								<!-- /col -->
 							</div>
+
 							<!-- /row -->
 						</div>
 					</div>
@@ -328,7 +333,7 @@
 															<h4 class="schedule-item-date">06 November 2016</h4>
 															<h3 class="schedule-item-title">Registration ITRC 2016 Closed</h3>
 															<div class="schedule-item-text">
-																<p>Pendaftaran tutup</p>
+																<p>Pendaftaran ITRC 2016 tutup</p>
 															</div>
 														</div>
 													</div>
@@ -705,6 +710,81 @@
 										<div class="col-sm-12">
 											<div class="schedule-item-infos">
 												<!-- FAQ Question -->
+												<h3 class="schedule-item-title faq-item-title">Apa itu ITRC 2016?</h3>
+												<!-- /FAQ Question -->
+												<!-- FAQ reply -->
+												<div class="schedule-item-text">
+													<p>iSTTS Techonology Robotic Competition adalah suatu lomba yang di buat oleh mahasiswa-mahasiswa iSTTS yang waktunya bertepatan dengan Dies Natalis iSTTS</p>
+													<p>ITRC 2016 lomba yang bertipe coding, jadi semua yang di lombakan di ITRC 2016 hanya ada coding.</p>
+													<p>Prepare Your Coding Skill!</p>
+												</div>	
+												<!-- /FAQ reply -->
+											</div>														
+										</div>
+										<!-- /col -->
+									</div>																		
+								</div>
+								<!-- FAQ item content -->
+							</div>
+						</div>
+					</div>	
+					<!-- /FAQ item -->
+					
+					<!-- FAQ item -->
+					<div class="schedule-item">
+						<div class="row">
+							<div class="col-sm-2">
+								<!-- FAQ item bar -->
+								<div class="schedule-item-block faq-item-block">
+									<div class="schedule-item-bar"></div>
+								</div>
+								<!-- /FAQ item bar -->
+							</div>
+							<div class="col-sm-10 schedule-item-content-wrapper">
+								<!-- FAQ item content -->
+								<div class="schedule-item-content faq-item-content">
+									<div class="row">
+										<!-- col -->
+										<div class="col-sm-12">
+											<div class="schedule-item-infos">
+												<!-- FAQ Question -->
+												<h3 class="schedule-item-title faq-item-title">Robot dan program apa yang di gunakan pada saat lomba?</h3>
+												<!-- /FAQ Question -->
+												<!-- FAQ reply -->
+												<div class="schedule-item-text">
+													<p>Robot yang digunakan adalah EV3 Mindstorms LEGO</p>
+													<p>Untuk programnya juga menggunakan program dari EV3</p>
+												</div>	
+												<!-- /FAQ reply -->
+											</div>														
+										</div>
+										<!-- /col -->
+									</div>																		
+								</div>
+								<!-- FAQ item content -->
+							</div>
+						</div>
+					</div>	
+					<!-- /FAQ item -->
+					
+					<!-- FAQ item -->
+					<div class="schedule-item">
+						<div class="row">
+							<div class="col-sm-2">
+								<!-- FAQ item bar -->
+								<div class="schedule-item-block faq-item-block">
+									<div class="schedule-item-bar"></div>
+								</div>
+								<!-- /FAQ item bar -->
+							</div>
+							<div class="col-sm-10 schedule-item-content-wrapper">
+								<!-- FAQ item content -->
+								<div class="schedule-item-content faq-item-content">
+									<div class="row">
+										<!-- col -->
+										<div class="col-sm-12">
+											<div class="schedule-item-infos">
+												<!-- FAQ Question -->
 												<h3 class="schedule-item-title faq-item-title">Apakah 1 tim bisa kurang dari 3 orang?</h3>
 												<!-- /FAQ Question -->
 												<!-- FAQ reply -->
@@ -822,7 +902,7 @@
 												<!-- /FAQ Question -->
 												<!-- FAQ reply -->
 												<div class="schedule-item-text">
-													<p>Laptop dan robot sudah di sediakan dari panitia.
+													<p>Komputer dan robot sudah di sediakan dari panitia.
 													<ul>
 														<li>Kartu identitas</li>
 														<li>Peralatan pribadi(handphone, dompet, obat, dll)</li>
@@ -884,6 +964,7 @@
 				<!-- Section title -->
 				<div class="section-title-wrapper">
 					<h2 class="title-section">Download</h2>
+					<a href="download.php" class="btn" style="margin-left:5px;"><i class="fa fa-download" ></i> &nbsp; Download Poster</a>
 					<p>Silahkan cek kembali website ini hari rabu.</p>
 				</div>
 				<!-- /Section title -->
@@ -933,28 +1014,33 @@
 						<!-- item -->
 						<a href="http://stts.edu/">
 							<div class="sponsor-item">
-								<img src="img/sponsor-1.png" alt="iSTTS" width="75">
+								<img src="img/sponsor-1.png" alt="iSTTS" width="90">
 							</div>
 						</a>
 						<!-- /item -->
 						<!-- item -->
 						<div class="sponsor-item">
-							<img src="img/sponsor-2.png" alt="HIMAFOR" width="75">
+							<img src="img/sponsor-2.png" alt="HIMAFOR" width="80">
 						</div>
 						<!-- /item -->
 						<!-- item -->
 						<a href="https://instagram.com/diesnatalis_istts/">
 							<div class="sponsor-item">
-								<img src="img/sponsor-3.png" alt="Dies Natalis XXXVII" width="75">
+								<img src="img/sponsor-3.png" alt="Dies Natalis XXXVII" width="100">
 							</div>
 						</a>
 						<!-- /item -->
 						<!-- item -->
 						<a href="http://e-robokidz.com/">
 							<div class="sponsor-item">
-								<img src="img/sponsor-4.png" alt="Robokidz" width="150">
+								<img src="img/sponsor-4.png" alt="Robokidz" width="250">
 							</div>
 						</a>
+						<!-- /item -->
+						<!-- item -->
+						<div class="sponsor-item">
+							<img src="img/sponsor-5.jpg" alt="LEGO EV3" width="250">
+						</div>
 						<!-- /item -->
 					</div>
 				</div>
