@@ -88,7 +88,7 @@
 			<li><a href="#section-fee">Registration Fee</a></li>
 			<li><a href="#section-faq">FAQ</a></li>
 	        <li><a href="#section-rules">Rules</a></li>
-	        <li><a href="#section-download">The Problem</a></li>
+	        <li><a href="#section-download">Download</a></li>
 	        <li><a href="#section-contact">Contact Us</a></li>
 	        <li><a href="http://form.jotform.me/62818977124466">Register</a></li>
 	      </ul>
