@@ -274,9 +274,11 @@
 						<div class="col-sm-10 col-sm-offset-2 schedule-tab-links-wrapper">
 							<!-- Tab links -->
 							<ul class="tab-links schedule-tab-links">
-						        <li class="active"><a href="#schedule-tab1"><span class="fa fa-calendar"></span>&nbsp;&nbsp; Registration</a></li>
-						        <li><a href="#schedule-tab2"><span class="fa fa-calendar"></span>&nbsp;&nbsp; TM</a></li>
-						        <li><a href="#schedule-tab3"><span class="fa fa-calendar"></span>&nbsp;&nbsp; ITRC</a></li>
+						        <li class="active"><a href="#schedule-tab1">
+									<span class="fa fa-calendar"></span>&nbsp;&nbsp; Workshop</a></li>
+									<li><a href="#schedule-tab2"><span class="fa fa-calendar"></span>&nbsp;&nbsp; Registration</a></li>
+									<li><a href="#schedule-tab3"><span class="fa fa-calendar"></span>&nbsp;&nbsp; TM</a></li>
+									<li><a href="#schedule-tab4"><span class="fa fa-calendar"></span>&nbsp;&nbsp; ITRC</a></li>
 						    </ul>
 						    <!-- /Tab Links -->
 						</div>
@@ -330,6 +332,83 @@
 													<!-- col -->
 													<div class="col-sm-10">
 														<div class="schedule-item-infos">
+															<h4 class="schedule-item-date">TBA</h4>
+															<h3 class="schedule-item-title">Workshop</h3>
+															<div class="schedule-item-text">
+																<p>TBA</p>
+															</div>
+														</div>
+													</div>
+													<!-- /col -->
+												</div>
+											</div>
+											<!-- schedule item content -->
+										</div>
+									</div>
+								</div>
+								<!-- /Schedule item -->
+									<!-- Schedule itens footer -->
+									<div class="schedule-item-footer">
+										<div class="row">
+											<div class="col-sm-2">
+												<!-- schedule item bar -->
+												<div class="schedule-item-block schedule-item-block-bottom">
+													<div class="schedule-item-bar schedule-item-bar-bottom"></div>
+												</div>
+												<!-- /schedule item bar -->
+											</div>
+											<div class="col-sm-10">
+											</div>
+										</div>
+									</div>
+								<!-- /Schedule itens footer -->
+							</div>
+				    		<!-- /schedule list -->
+				    	</div>
+				    	<!-- /Schedule Tab -->
+						
+						<!-- Schedule Tab -->
+				    	<div class="schedule-tab tab" id="schedule-tab2">
+				    		<!-- schedule list -->
+				    		<div class="schedule-list">
+
+								<!-- Schedule itens header -->
+								<div class="schedule-item-header">
+									<div class="row">
+										<div class="col-sm-2">
+											<!-- schedule item bar -->
+											<div class="schedule-item-block schedule-item-block-top">
+												<div class="schedule-item-bar schedule-item-bar-top"></div>
+											</div>
+											<!-- /schedule item bar -->
+										</div>
+										<div class="col-sm-10">
+										</div>
+									</div>
+								</div>
+								<!-- /Schedule itens header -->
+
+								<!-- Schedule item -->
+								<div class="schedule-item">
+									<div class="row">
+										<div class="col-sm-2">
+											<!-- schedule item bar -->
+											<div class="schedule-item-block">
+												<div class="schedule-item-bar"></div>
+											</div>
+											<!-- /schedule item bar -->
+										</div>
+										<div class="col-sm-10 schedule-item-content-wrapper">
+											<!-- schedule item content -->
+											<div class="schedule-item-content">
+												<div class="row">
+													<!-- col -->
+													<div class="col-sm-2">
+													</div>
+													<!-- /col -->
+													<!-- col -->
+													<div class="col-sm-10">
+														<div class="schedule-item-infos">
 															<h4 class="schedule-item-date">06 November 2016</h4>
 															<h3 class="schedule-item-title">Registration ITRC 2016 Closed</h3>
 															<div class="schedule-item-text">
@@ -364,8 +443,9 @@
 				    		<!-- /schedule list -->
 				    	</div>
 				    	<!-- /Schedule Tab -->
+						
 				    	<!-- Schedule Tab -->
-				    	<div class="schedule-tab tab" id="schedule-tab2">
+				    	<div class="schedule-tab tab" id="schedule-tab3">
 				    		<!-- schedule list -->
 				    		<div class="schedule-list">
 
@@ -447,7 +527,7 @@
 				    	<!-- /Schedule Tab -->
 
 				    	<!-- Schedule Tab -->
-				    	<div class="schedule-tab tab" id="schedule-tab3">
+				    	<div class="schedule-tab tab" id="schedule-tab4">
 				    		<!-- schedule list -->
 				    		<div class="schedule-list">
 
@@ -921,6 +1001,42 @@
 					</div>	
 					<!-- /FAQ item -->
 					
+					<!-- FAQ item -->
+					<div class="schedule-item">
+						<div class="row">
+							<div class="col-sm-2">
+								<!-- FAQ item bar -->
+								<div class="schedule-item-block faq-item-block">
+									<div class="schedule-item-bar"></div>
+								</div>
+								<!-- /FAQ item bar -->
+							</div>
+							<div class="col-sm-10 schedule-item-content-wrapper">
+								<!-- FAQ item content -->
+								<div class="schedule-item-content faq-item-content">
+									<div class="row">
+										<!-- col -->
+										<div class="col-sm-12">
+											<div class="schedule-item-infos">
+												<!-- FAQ Question -->
+												<h3 class="schedule-item-title faq-item-title">Jika sudah mendaftar, kapan terakhir Bayar</h3>
+												<!-- /FAQ Question -->
+												<!-- FAQ reply -->
+												<div class="schedule-item-text">
+													<p>Terakhir bayar 8 November 2016. Jika melewati tanggal itu, peserta yang sudah mendaftar akan gugur.</p>
+												</div>	
+												<!-- /FAQ reply -->
+											</div>														
+										</div>
+										<!-- /col -->
+									</div>																		
+								</div>
+								<!-- FAQ item content -->
+							</div>
+						</div>
+					</div>	
+					<!-- /FAQ item -->
+					
 					<!-- FAQ itens footer -->
 					<div class="schedule-item-footer">
 						<div class="row">
@@ -980,17 +1096,9 @@
 				<!-- Section title -->
 				<div class="section-title-wrapper">
 					<h2 class="title-section">Contact Us</h2>
-					<div class="row">
-						<div class="col-sm-4">
-							<a href="https://instagram.com/itrcistts/" class="btn"><img src="img/instagram.png" width="25">&nbsp; Follow @itrcistts</a>
-						</div>
-						<div class="col-sm-4">
-							<div class="btn">&nbsp; Alexandy 081553447073</div><br>
-						</div>
-						<div class="col-sm-4">
-							<div class="btn">&nbsp; Anthony 087853951315</div>
-						</div>
-					</div>
+						<p><a href="https://instagram.com/itrcistts/" class="btn"><img src="img/instagram.png" width="25">&nbsp; Follow @itrcistts</a></p>
+						<p><div class="btn">&nbsp; Alexandy 081553447073</div></p>
+						<p><div class="btn">&nbsp; Anthony 087853951315</div></p>
 				</div>
 				<!-- /Section title -->
 			</div>
