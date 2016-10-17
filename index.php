@@ -65,7 +65,7 @@
     </div>
     <!-- /Edit With Your Name -->
     <!-- Edit With Your Job -->
-    <p class="loader-job" id="loader-job">17 November 2016 di STTS</p>
+    <p class="loader-job" id="loader-job">16 November 2016 di iSTTS</p>
     <!-- /Edit With Your Job -->
   </div>
 </div>
@@ -128,7 +128,7 @@
 									<!-- /event logo -->
 									<!-- Event Infos -->
 									<div class="ic-infos">
-										<p>17 November 2016 di STTS</p>
+										<p>16 November 2016 di iSTTS</p>
 									</div>
 									<!-- /Event Infos -->
 									<!-- Register Form -->
@@ -140,8 +140,8 @@
 
 										<!-- Buttons -->
 										<div class="ic-buttons">
-											<a href="http://form.jotform.me/62818977124466" class="btn" style="margin-right:5px;"><i class="fa fa-paper-plane" ></i> &nbsp; register now</a>
-											<a href="download.php" class="btn" style="margin-left:5px;"><i class="fa fa-download" ></i> &nbsp; Download Poster</a>
+											<a href="http://form.jotform.me/62818977124466" class="btn"><i class="fa fa-paper-plane" ></i> &nbsp; register now</a>
+											<a href="download.php" class="btn"><i class="fa fa-download" ></i> &nbsp; Download Poster</a>
 										</div>
 										<!-- /buttons -->
 									</form>
