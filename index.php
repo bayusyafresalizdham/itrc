@@ -1,7 +1,12 @@
+<?php
+	include_once 'Database.php';
+	$db = new Database();
+
+?>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -49,7 +54,7 @@
 </head>
 <body>
 
-											
+
 <!-- Page Loader
 ========================================================= -->
 <div class="loader-container" id="page-loader">
@@ -65,7 +70,8 @@
     </div>
     <!-- /Edit With Your Name -->
     <!-- Edit With Your Job -->
-    <p class="loader-job" id="loader-job">16 November 2016 di iSTTS</p>
+												<?php $result = $db->query('select * from lomba limit 1')?>
+    <p class="loader-job" id="loader-job"><?php while($row = $result->fetch_assoc()){ echo $row['tgl'];} ?> di iSTTS</p>
     <!-- /Edit With Your Job -->
   </div>
 </div>
@@ -89,7 +95,6 @@
 			<li><a href="#section-schedule">Schedule</a></li>
 			<li><a href="#section-fee">Registration Fee</a></li>
 			<li><a href="#section-faq">FAQ</a></li>
-	        <li><a href="#section-rules">Rules</a></li>
 	        <li><a href="#section-download">Download</a></li>
 	        <li><a href="#section-contact">Contact Us</a></li>
 	        <li><a href="http://form.jotform.me/62818977124466">Register</a></li>
@@ -104,11 +109,11 @@
 <div class="page-wrapper">
 
 	<div id="body-content">
-	
+
 		<!-- SECTION: Intro
 		================================================== -->
 		<div class="owl-carousel main-carousel" id="main-carousel">
-		
+
 			<!-- slide -->
 			<div class="main-intro" style="background-image: url('img/favicon.png');">
 				<div class="container">
@@ -128,7 +133,9 @@
 									<!-- /event logo -->
 									<!-- Event Infos -->
 									<div class="ic-infos">
-										<p>16 November 2016 di iSTTS</p>
+
+										<?php $result = $db->query('select * from lomba limit 1')?>
+										<p><?php while($row = $result->fetch_assoc()){ echo $row['tgl'];} ?> di iSTTS</p>
 									</div>
 									<!-- /Event Infos -->
 									<!-- Register Form -->
@@ -222,8 +229,7 @@
 						<div class="event-info-ico"><span class="fa fa-calendar"></span></div>
 						<h3 class="main-title3">Location : iSTTS</h3>
 						<p>
-						Jalan Ngagel Jaya Tengah 73 - 77
-						Surabaya, Indonesia</p>
+						Jalan Ngagel Jaya Tengah 73 - 77 Surabaya</p>
 					</div>
 					<!-- /date -->
 					<!-- Time -->
@@ -234,18 +240,21 @@
 					</div>
 					<!-- /Time -->
 					<!-- Time -->
-					
+
 					<div class="event-info-col">
 						<div class="event-info-ico"><span class="fa fa-ticket"></span></div>
 						<h3 class="main-title3">SMA</h3>
-						<p><strong>25</strong> Team Target</p>
+
+						<?php $result = $db->query("select * from detail where title='SMA'");?>
+						<p><strong><?php   while($row = $result->fetch_assoc()){ echo $row['peserta'];} ?></strong> Team Target</p>
 					</div>
 					<!-- /Time -->
 					<!-- Time -->
 					<div class="event-info-col">
 						<div class="event-info-ico"><span class="fa fa-microphone"></span></div>
 						<h3 class="main-title3">SMP</h3>
-						<p><strong>25</strong> Team Target</p>
+						<?php $result = $db->query("select * from detail where title='SMP'");?>
+						<p><strong><?php   while($row = $result->fetch_assoc()){ echo $row['peserta'];} ?></strong> Team Target</p>
 					</div>
 					<!-- /Time -->
 				</div>
@@ -260,12 +269,99 @@
 		<div class="section-schedule section-bg-left" id="section-schedule">
 			<div class="container">
 
+				<?php $re1 = $db->query("select * from pemanang where role= '1'");
+				$cei = 0;
+				while($row = $re1->fetch_assoc()){
+					if($row['nama'] != "" && $row['sekolah'] != ""){
+						$cei += 1;
+					}
+					
+				}
+				if($cei >1){
+				?>
+				<div class="section-title-wrapper">
+					<h2 class="title-section"><span class="title-section-bg">Pemenang SMA <small></small></span></h2>
+				</div>
+				
+				<div class="row">
+
+					<!-- item -->
+					<?php $re = $db->query("select * from pemanang where role='1' limit ".$cei);?>
+					<?php while($row = $re->fetch_assoc()){?>
+					<div class="<?php if($cei == 2){ echo "col-sm-6";}else{echo "col-sm-4";}?>">
+						<!-- price ticket -->
+							<div class="price-ticket-item-wrapper">
+								<!-- Front card -->
+								<div class="price-ticket-item-front">
+									<div class="price-ticket-item-border">
+									<!-- row -->
+									<div class="row">
+										<!-- col -->
+										<div class="col-sm-12">
+											<!-- ticket price -->
+											
+											<h3 class="price-ticket-title"><?php echo $row['juara'];?> SMA</h3>
+											<p class="price-ticket-type" style="font-size:20px;"><b><?php echo $row['nama'];?></b></p>
+											<p class="price-ticket-type"><b>(<?php echo $row['sekolah'];?>)</b></p>
+											<!-- /ticket-price -->
+										</div>
+										<!-- /col -->
+									</div>
+									<!-- /row -->
+								</div>
+							</div>
+							<!-- /front-card -->
+							</div>
+						<!-- /price ticket -->
+					</div>
+					<?php }?>
+					<!-- /item -->
+				</div>
+				<div class="section-title-wrapper">
+					<h2 class="title-section"><span class="title-section-bg">Pemenang SMP <small></small></span></h2>
+				</div>
+				
+				<div class="row">
+
+					<!-- item -->
+					<?php $re = $db->query("select * from pemanang where role='2' limit ".$cei);?>
+					<?php while($row = $re->fetch_assoc()){?>
+					<div class="<?php if($cei == 2){ echo "col-sm-6";}else{echo "col-sm-4";}?>">
+						<!-- price ticket -->
+							<div class="price-ticket-item-wrapper">
+								<!-- Front card -->
+								<div class="price-ticket-item-front">
+									<div class="price-ticket-item-border">
+									<!-- row -->
+									<div class="row">
+										<!-- col -->
+										<div class="col-sm-12">
+											<!-- ticket price -->
+											
+											<h3 class="price-ticket-title"><?php echo $row['juara'];?> SMP</h3>
+											<p class="price-ticket-type" style="font-size:20px;"><b><?php echo $row['nama'];?></b></p>
+											<p class="price-ticket-type"><b>(<?php echo $row['sekolah'];?>)</b></p>
+											<!-- /ticket-price -->
+										</div>
+										<!-- /col -->
+									</div>
+									<!-- /row -->
+								</div>
+							</div>
+							<!-- /front-card -->
+							</div>
+						<!-- /price ticket -->
+					</div>
+					<?php }?>
+					<!-- /item -->
+				</div>
+				<?php }?>
 				<!-- Section title -->
 				<div class="section-title-wrapper">
 					<h2 class="title-section"><span class="title-section-bg">Event Schedule <small></small></span></h2>
 				</div>
 				<!-- /Section title -->
-
+	
 
 
 				<!-- TABS -->
@@ -320,28 +416,24 @@
 										</div>
 										<div class="col-sm-10 schedule-item-content-wrapper">
 											<!-- schedule item content -->
+											<?php $result1 = $db->query("select * from acara where category='1'");?>
+											<?php   while($row = $result1->fetch_assoc()){ ?>
 											<div class="schedule-item-content">
 												<div class="row">
 													<!-- col -->
-													<div class="col-sm-2">
-														<div class="schedule-item-img">
-															<!--<img src="img/front.png" alt="">-->
-														</div>
-													</div>
-													<!-- /col -->
-													<!-- col -->
-													<div class="col-sm-10">
+													<div class="col-sm-12">
 														<div class="schedule-item-infos">
-															<h4 class="schedule-item-date">TBA</h4>
-															<h3 class="schedule-item-title">Workshop</h3>
+															<h4 class="schedule-item-date"><?php echo $row['child_title'];?></h4>
+															<h3 class="schedule-item-title"><?php echo $row['title'];?></h3>
 															<div class="schedule-item-text">
-																<p>TBA</p>
+																<p><?php echo $row['desc'];?></p>
 															</div>
 														</div>
 													</div>
 													<!-- /col -->
 												</div>
 											</div>
+											<?php }?>
 											<!-- schedule item content -->
 										</div>
 									</div>
@@ -366,7 +458,7 @@
 				    		<!-- /schedule list -->
 				    	</div>
 				    	<!-- /Schedule Tab -->
-						
+
 						<!-- Schedule Tab -->
 				    	<div class="schedule-tab tab" id="schedule-tab2">
 				    		<!-- schedule list -->
@@ -400,25 +492,24 @@
 										</div>
 										<div class="col-sm-10 schedule-item-content-wrapper">
 											<!-- schedule item content -->
+											<?php $result1 = $db->query("select * from acara where category='2'");?>
+											<?php   while($row = $result1->fetch_assoc()){ ?>
 											<div class="schedule-item-content">
 												<div class="row">
 													<!-- col -->
-													<div class="col-sm-2">
-													</div>
-													<!-- /col -->
-													<!-- col -->
-													<div class="col-sm-10">
+													<div class="col-sm-12">
 														<div class="schedule-item-infos">
-															<h4 class="schedule-item-date">06 November 2016</h4>
-															<h3 class="schedule-item-title">Registration ITRC 2016 Closed</h3>
+															<h4 class="schedule-item-date"><?php echo $row['child_title'];?></h4>
+															<h3 class="schedule-item-title"><?php echo $row['title'];?></h3>
 															<div class="schedule-item-text">
-																<p>Pendaftaran ITRC 2016 tutup</p>
+																<p><?php echo $row['desc'];?></p>
 															</div>
 														</div>
 													</div>
 													<!-- /col -->
 												</div>
 											</div>
+											<?php }?>
 											<!-- schedule item content -->
 										</div>
 									</div>
@@ -443,7 +534,7 @@
 				    		<!-- /schedule list -->
 				    	</div>
 				    	<!-- /Schedule Tab -->
-						
+
 				    	<!-- Schedule Tab -->
 				    	<div class="schedule-tab tab" id="schedule-tab3">
 				    		<!-- schedule list -->
@@ -476,31 +567,24 @@
 											<!-- /schedule item bar -->
 										</div>
 										<div class="col-sm-10 schedule-item-content-wrapper">
-											<!-- schedule item content -->
+											<?php $result1 = $db->query("select * from acara where category='3'");?>
+											<?php   while($row = $result1->fetch_assoc()){ ?>
 											<div class="schedule-item-content">
 												<div class="row">
 													<!-- col -->
-													<div class="col-sm-2">
-														<div class="schedule-item-img">
-															<img src="img/front.png" alt="">
-														</div>
-													</div>
-													<!-- /col -->
-													<!-- col -->
-													<div class="col-sm-10">
+													<div class="col-sm-12">
 														<div class="schedule-item-infos">
-															<h4 class="schedule-item-date">14 November 2016</h4>
-															<h3 class="schedule-item-title">Technical Meeting ITRC 2016</h3>
+															<h4 class="schedule-item-date"><?php echo $row['child_title'];?></h4>
+															<h3 class="schedule-item-title"><?php echo $row['title'];?></h3>
 															<div class="schedule-item-text">
-																<p>Venue: Auditorium iSTTS<br>
-																	Jalan Ngagel Jaya Tengah 73 - 77<br>
-																	Surabaya, Indonesia</p>
+																<p><?php echo $row['desc'];?></p>
 															</div>
 														</div>
 													</div>
 													<!-- /col -->
 												</div>
 											</div>
+											<?php }?>
 											<!-- schedule item content -->
 										</div>
 									</div>
@@ -559,30 +643,24 @@
 										</div>
 										<div class="col-sm-10 schedule-item-content-wrapper">
 											<!-- schedule item content -->
+											<?php $result1 = $db->query("select * from acara where category='4'");?>
+											<?php   while($row = $result1->fetch_assoc()){ ?>
 											<div class="schedule-item-content">
 												<div class="row">
 													<!-- col -->
-													<div class="col-sm-2">
-														<div class="schedule-item-img">
-															<img src="img/front.png" alt="">
-														</div>
-													</div>
-													<!-- /col -->
-													<!-- col -->
-													<div class="col-sm-10">
+													<div class="col-sm-12">
 														<div class="schedule-item-infos">
-															<h4 class="schedule-item-date">16 November 2016</h4>
-															<h3 class="schedule-item-title">ITRC 2016</h3>
+															<h4 class="schedule-item-date"><?php echo $row['child_title'];?></h4>
+															<h3 class="schedule-item-title"><?php echo $row['title'];?></h3>
 															<div class="schedule-item-text">
-																<p>Venue: iSTTS<br>
-																	Jalan Ngagel Jaya Tengah 73 - 77<br>
-																	Surabaya, Indonesia</p>
+																<p><?php echo $row['desc'];?></p>
 															</div>
 														</div>
 													</div>
 													<!-- /col -->
 												</div>
 											</div>
+											<?php }?>
 											<!-- schedule item content -->
 										</div>
 									</div>
@@ -648,8 +726,11 @@
 										<!-- col -->
 										<div class="col-sm-6">
 											<!-- ticket price -->
-											<h3 class="price-ticket-title">SMA</h3>
-											<p class="price-ticket-type">Rp. 150.000</p>
+											<?php $result1 = $db->query("select * from detail where title='SMA'");?>
+											<?php   while($row = $result1->fetch_assoc()){ ?>
+											<h3 class="price-ticket-title"><?php echo $row['title'];?></h3>
+											<p class="price-ticket-type"><?php echo $row['biaya'];?></p>
+											<?php }?>
 											<!-- /ticket-price -->
 										</div>
 										<!-- /col -->
@@ -658,9 +739,10 @@
 											<div class="price-ticket-infos-wrapper">
 												<p><strong>This Includes:</strong></p>
 												<ul class="clean-list">
-													<li><i class="fa fa-check"></i>&nbsp; Gratis Snack</li>
-													<li><i class="fa fa-check"></i>&nbsp; Gratis Makan </li>
-													<li><i class="fa fa-check"></i>&nbsp; Sertifikat Peserta </li>
+													<?php $result = $db->query("select * from idetail where jenis='1'");?>
+													<?php while($row=$result->fetch_assoc()){?>
+													<li><i class="fa fa-check"></i>&nbsp; <?php echo $row['desc'];?></li>
+													<?php }?>
 												</ul>
 											</div>
 										</div>
@@ -697,8 +779,11 @@
 											<!-- col -->
 											<div class="col-sm-6">
 												<!-- ticket price -->
-												<h3 class="price-ticket-title">SMP</h3>
-												<p class="price-ticket-type">Rp. 120.000</p>
+												<?php $result1 = $db->query("select * from detail where title='SMP'");?>
+												<?php   while($row = $result1->fetch_assoc()){ ?>
+												<h3 class="price-ticket-title"><?php echo $row['title'];?></h3>
+												<p class="price-ticket-type"><?php echo $row['biaya'];?></p>
+												<?php }?>
 												<!-- /ticket-price -->
 											</div>
 											<!-- /col -->
@@ -707,9 +792,10 @@
 												<div class="price-ticket-infos-wrapper">
 													<p><strong>This Includes:</strong></p>
 													<ul class="clean-list">
-														<li><i class="fa fa-check"></i>&nbsp; Gratis Snack</li>
-														<li><i class="fa fa-check"></i>&nbsp; Gratis Makan </li>
-														<li><i class="fa fa-check"></i>&nbsp; Sertifikat Peserta </li>
+														<?php $result = $db->query("select * from idetail where jenis='2'");?>
+														<?php while($row=$result->fetch_assoc()){?>
+														<li><i class="fa fa-check"></i>&nbsp; <?php echo $row['desc'];?></li>
+														<?php }?>
 													</ul>
 												</div>
 											</div>
@@ -742,7 +828,7 @@
 		</div>
 		<!-- /SECTION: Prices
 		================================================== -->
-		
+
 		<!-- SECTION: FAQ
 		================================================== -->
 		<div class="section-faq section-padding section-bg-right" id="section-faq">
@@ -750,9 +836,9 @@
 				<!-- Section title -->
 				<div class="section-title-wrapper">
 					<h2 class="title-section">Faq</h2>
-				</div>				
+				</div>
 				<!-- /Section title -->
-				
+
 				<!-- FAQ list -->
 				<div class="schedule-list">
 
@@ -766,13 +852,16 @@
 								</div>
 								<!-- /FAQ item bar -->
 							</div>
-							<div class="col-sm-10">						
+							<div class="col-sm-10">
 							</div>
 						</div>
-					</div>	
+					</div>
 					<!-- /FAQ itens header -->
 
 					<!-- FAQ item -->
+
+					<?php $result = $db->query("select * from faq");?>
+					<?php while($row = $result->fetch_assoc()){?>
 					<div class="schedule-item">
 						<div class="row">
 							<div class="col-sm-2">
@@ -790,253 +879,25 @@
 										<div class="col-sm-12">
 											<div class="schedule-item-infos">
 												<!-- FAQ Question -->
-												<h3 class="schedule-item-title faq-item-title">Apa itu ITRC 2016?</h3>
+												<h3 class="schedule-item-title faq-item-title"><?php echo $row['ask'];?></h3>
 												<!-- /FAQ Question -->
 												<!-- FAQ reply -->
 												<div class="schedule-item-text">
-													<p>iSTTS Techonology Robotic Competition adalah suatu lomba yang di buat oleh mahasiswa-mahasiswa iSTTS yang waktunya bertepatan dengan Dies Natalis iSTTS</p>
-													<p>ITRC 2016 lomba yang bertipe coding, jadi semua yang di lombakan di ITRC 2016 hanya ada coding.</p>
-													<p>Prepare Your Coding Skill!</p>
-												</div>	
+													<?php echo $row['answer'];?>
+												</div>
 												<!-- /FAQ reply -->
-											</div>														
+											</div>
 										</div>
 										<!-- /col -->
-									</div>																		
+									</div>
 								</div>
 								<!-- FAQ item content -->
 							</div>
 						</div>
-					</div>	
-					<!-- /FAQ item -->
-					
-					<!-- FAQ item -->
-					<div class="schedule-item">
-						<div class="row">
-							<div class="col-sm-2">
-								<!-- FAQ item bar -->
-								<div class="schedule-item-block faq-item-block">
-									<div class="schedule-item-bar"></div>
-								</div>
-								<!-- /FAQ item bar -->
-							</div>
-							<div class="col-sm-10 schedule-item-content-wrapper">
-								<!-- FAQ item content -->
-								<div class="schedule-item-content faq-item-content">
-									<div class="row">
-										<!-- col -->
-										<div class="col-sm-12">
-											<div class="schedule-item-infos">
-												<!-- FAQ Question -->
-												<h3 class="schedule-item-title faq-item-title">Robot dan program apa yang di gunakan pada saat lomba?</h3>
-												<!-- /FAQ Question -->
-												<!-- FAQ reply -->
-												<div class="schedule-item-text">
-													<p>Robot yang digunakan adalah EV3 Mindstorms LEGO</p>
-													<p>Untuk programnya juga menggunakan program dari EV3</p>
-												</div>	
-												<!-- /FAQ reply -->
-											</div>														
-										</div>
-										<!-- /col -->
-									</div>																		
-								</div>
-								<!-- FAQ item content -->
-							</div>
-						</div>
-					</div>	
-					<!-- /FAQ item -->
-					
-					<!-- FAQ item -->
-					<div class="schedule-item">
-						<div class="row">
-							<div class="col-sm-2">
-								<!-- FAQ item bar -->
-								<div class="schedule-item-block faq-item-block">
-									<div class="schedule-item-bar"></div>
-								</div>
-								<!-- /FAQ item bar -->
-							</div>
-							<div class="col-sm-10 schedule-item-content-wrapper">
-								<!-- FAQ item content -->
-								<div class="schedule-item-content faq-item-content">
-									<div class="row">
-										<!-- col -->
-										<div class="col-sm-12">
-											<div class="schedule-item-infos">
-												<!-- FAQ Question -->
-												<h3 class="schedule-item-title faq-item-title">Apakah 1 tim bisa kurang dari 3 orang?</h3>
-												<!-- /FAQ Question -->
-												<!-- FAQ reply -->
-												<div class="schedule-item-text">
-													<p>Minimal adalah 1 orang dan maksimal 3 orang.</p>
-												</div>	
-												<!-- /FAQ reply -->
-											</div>														
-										</div>
-										<!-- /col -->
-									</div>																		
-								</div>
-								<!-- FAQ item content -->
-							</div>
-						</div>
-					</div>	
+					</div>
 					<!-- /FAQ item -->
 
-					<!-- FAQ item -->
-					<div class="schedule-item">
-						<div class="row">
-							<div class="col-sm-2">
-								<!-- FAQ item bar -->
-								<div class="schedule-item-block faq-item-block">
-									<div class="schedule-item-bar"></div>
-								</div>
-								<!-- /FAQ item bar -->
-							</div>
-							<div class="col-sm-10 schedule-item-content-wrapper">
-								<!-- FAQ item content -->
-								<div class="schedule-item-content faq-item-content">
-									<div class="row">
-										<!-- col -->
-										<div class="col-sm-12">
-											<div class="schedule-item-infos">
-												<!-- FAQ Question -->
-												<h3 class="schedule-item-title faq-item-title">Apakah boleh peserta berbeda sekolah?</h3>
-												<!-- /FAQ Question -->
-												<!-- FAQ reply -->
-												<div class="schedule-item-text">
-													<p>Boleh.</p>
-												</div>	
-												<!-- /FAQ reply -->
-											</div>														
-										</div>
-										<!-- /col -->
-									</div>																		
-								</div>
-								<!-- FAQ item content -->
-							</div>
-						</div>
-					</div>	
-					<!-- /FAQ item -->
-
-					<!-- FAQ item -->
-					<div class="schedule-item">
-						<div class="row">
-							<div class="col-sm-2">
-								<!-- FAQ item bar -->
-								<div class="schedule-item-block faq-item-block">
-									<div class="schedule-item-bar"></div>
-								</div>
-								<!-- /FAQ item bar -->
-							</div>
-							<div class="col-sm-10 schedule-item-content-wrapper">
-								<!-- FAQ item content -->
-								<div class="schedule-item-content faq-item-content">
-									<div class="row">
-										<!-- col -->
-										<div class="col-sm-12">
-											<div class="schedule-item-infos">
-												<!-- FAQ Question -->
-												<h3 class="schedule-item-title faq-item-title">Bagaimana cara bayar biaya daftar ITRC 2016</h3>
-												<!-- /FAQ Question -->
-												<!-- FAQ reply -->
-												<div class="schedule-item-text">
-													<p>Pembayaran bisa melalui transfer BCA 0880245635 a/n GERRY SURYA CHANDRA, CHU
-													Lalu melakukan konfirmasi dengan cara mengirim nama tim dan bukti transfer ke salah satu cara dibawah :
-													<ul>
-														<li>082233417839</li>
-														<li>itrcistts@gmail.com</li>
-													</ul></p>
-												</div>	
-												<!-- /FAQ reply -->
-											</div>														
-										</div>
-										<!-- /col -->
-									</div>																		
-								</div>
-								<!-- FAQ item content -->
-							</div>
-						</div>
-					</div>	
-					<!-- /FAQ item -->
-					
-					<!-- FAQ item -->
-					<div class="schedule-item">
-						<div class="row">
-							<div class="col-sm-2">
-								<!-- FAQ item bar -->
-								<div class="schedule-item-block faq-item-block">
-									<div class="schedule-item-bar"></div>
-								</div>
-								<!-- /FAQ item bar -->
-							</div>
-							<div class="col-sm-10 schedule-item-content-wrapper">
-								<!-- FAQ item content -->
-								<div class="schedule-item-content faq-item-content">
-									<div class="row">
-										<!-- col -->
-										<div class="col-sm-12">
-											<div class="schedule-item-infos">
-												<!-- FAQ Question -->
-												<h3 class="schedule-item-title faq-item-title">Apa saja yang perlu di bawa pada saat lomba?</h3>
-												<!-- /FAQ Question -->
-												<!-- FAQ reply -->
-												<div class="schedule-item-text">
-													<p>Komputer dan robot sudah di sediakan dari panitia.
-													<ul>
-														<li>Kartu identitas</li>
-														<li>Peralatan pribadi(handphone, dompet, obat, dll)</li>
-														<li>Baterai untuk robot</li>
-													</ul></p>
-												</div>	
-												<!-- /FAQ reply -->
-											</div>														
-										</div>
-										<!-- /col -->
-									</div>																		
-								</div>
-								<!-- FAQ item content -->
-							</div>
-						</div>
-					</div>	
-					<!-- /FAQ item -->
-					
-					<!-- FAQ item -->
-					<div class="schedule-item">
-						<div class="row">
-							<div class="col-sm-2">
-								<!-- FAQ item bar -->
-								<div class="schedule-item-block faq-item-block">
-									<div class="schedule-item-bar"></div>
-								</div>
-								<!-- /FAQ item bar -->
-							</div>
-							<div class="col-sm-10 schedule-item-content-wrapper">
-								<!-- FAQ item content -->
-								<div class="schedule-item-content faq-item-content">
-									<div class="row">
-										<!-- col -->
-										<div class="col-sm-12">
-											<div class="schedule-item-infos">
-												<!-- FAQ Question -->
-												<h3 class="schedule-item-title faq-item-title">Jika sudah mendaftar, kapan terakhir Bayar</h3>
-												<!-- /FAQ Question -->
-												<!-- FAQ reply -->
-												<div class="schedule-item-text">
-													<p>Terakhir bayar 8 November 2016. Jika melewati tanggal itu, peserta yang sudah mendaftar akan gugur.</p>
-												</div>	
-												<!-- /FAQ reply -->
-											</div>														
-										</div>
-										<!-- /col -->
-									</div>																		
-								</div>
-								<!-- FAQ item content -->
-							</div>
-						</div>
-					</div>	
-					<!-- /FAQ item -->
-					
+					<?php }?>
 					<!-- FAQ itens footer -->
 					<div class="schedule-item-footer">
 						<div class="row">
@@ -1047,10 +908,10 @@
 								</div>
 								<!-- /FAQ item bar -->
 							</div>
-							<div class="col-sm-10">						
+							<div class="col-sm-10">
 							</div>
 						</div>
-					</div>	
+					</div>
 					<!-- /FAQ itens footer -->
 				</div>
 				<!-- /FAQ list -->
@@ -1058,21 +919,7 @@
 		</div>
 		<!-- /SECTION: FAQ
 		================================================== -->
-		<!-- /SECTION: Rules
-		================================================== -->
-		<div class="section-prices section-padding section-bg-left" id="section-rules">
-			<div class="container">
-				<!-- Section title -->
-				<div class="section-title-wrapper">
-					<h2 class="title-section">Rules</h2>
-					<p>Silahkan cek kembali website ini hari rabu.</p>
-				</div>
-				<!-- /Section title -->
-			</div>
-		</div>
-		<!-- /SECTION: Rules
-		================================================== -->
-		
+
 		<!-- /SECTION: Download
 		================================================== -->
 		<div class="section-team inverted-section2 section-padding" id="section-download">
@@ -1080,15 +927,17 @@
 				<!-- Section title -->
 				<div class="section-title-wrapper">
 					<h2 class="title-section">Download</h2>
+					
+					<a href="download1.php" class="btn"  style="margin-left:5px;"><i class="fa fa-download" ></i> &nbsp; Download Rules</a>
+					<a href="download2.php" class="btn"  style="margin-left:5px;"><i class="fa fa-download" ></i> &nbsp; Download Soal</a>
 					<a href="download.php" class="btn" style="margin-left:5px;"><i class="fa fa-download" ></i> &nbsp; Download Poster</a>
-					<p>Silahkan cek kembali website ini hari rabu.</p>
 				</div>
 				<!-- /Section title -->
 			</div>
 		</div>
 		<!-- /SECTION: Download
 		================================================== -->
-		
+
 		<!-- /SECTION: Contact Us
 		================================================== -->
 		<div class="section-prices section-padding section-bg-left" id="section-contact">
@@ -1096,9 +945,10 @@
 				<!-- Section title -->
 				<div class="section-title-wrapper">
 					<h2 class="title-section">Contact Us</h2>
-						<p><a href="https://instagram.com/itrcistts/" class="btn"><img src="img/instagram.png" width="25">&nbsp; Follow @itrcistts</a></p>
-						<p><div class="btn">&nbsp; Alexandy 081553447073</div></p>
-						<p><div class="btn">&nbsp; Anthony 087853951315</div></p>
+						<?php $result = $db->query('select * from contact'); ?>
+						<?php while($row = $result->fetch_assoc()){?>
+						<p><a href="<?php echo $row['url'];?>" class="btn">&nbsp; <?php echo $row['title'];?> <?php echo $row['contact'];?></a></p>
+						<?php }?>
 				</div>
 				<!-- /Section title -->
 			</div>
@@ -1120,36 +970,16 @@
 				<div class="sponsors-list-wrapper">
 					<div class="sponsors-list" id="sponsors-carousel">
 						<!-- item -->
-						<a href="http://stts.edu/">
+						<?php $result = $db->query('select * from sponsor'); ?>
+						<?php while($row = $result->fetch_assoc()){?>
+						<a href="<?php echo $row['redirect'];?>">
 							<div class="sponsor-item">
-								<img src="img/sponsor-1.png" alt="iSTTS" width="90">
+								<img src="img/<?php echo $row['link'];?>"  height="70"  style="max-width:240px;">
 							</div>
 						</a>
+						<?php }?>
 						<!-- /item -->
-						<!-- item -->
-						<div class="sponsor-item">
-							<img src="img/sponsor-2.png" alt="HIMAFOR" width="80">
-						</div>
-						<!-- /item -->
-						<!-- item -->
-						<a href="https://instagram.com/diesnatalis_istts/">
-							<div class="sponsor-item">
-								<img src="img/sponsor-3.png" alt="Dies Natalis XXXVII" width="100">
-							</div>
-						</a>
-						<!-- /item -->
-						<!-- item -->
-						<a href="http://e-robokidz.com/">
-							<div class="sponsor-item">
-								<img src="img/sponsor-4.png" alt="Robokidz" width="250">
-							</div>
-						</a>
-						<!-- /item -->
-						<!-- item -->
-						<div class="sponsor-item">
-							<img src="img/sponsor-5.jpg" alt="LEGO EV3" width="250">
-						</div>
-						<!-- /item -->
+
 					</div>
 				</div>
 			</div>
@@ -1168,7 +998,7 @@
 ============================================================================== -->
 <script>
 function move(){
-	
+
 	document.location = "http://form.jotform.me/62818977124466";
 }
 </script>
